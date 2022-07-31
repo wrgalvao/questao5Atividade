@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARBEARIA</title>
+</head>
+<body>
+    <style>
+        th, td
+        {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th
+        {
+            background-color: grey;
+            color: white;
+        }
+        fieldset
+        {
+            width: 50%;
+        }
+        .box
+        {
+            position: relative;
+            left: 25%;
+        }
+    </style>
+    <div id="home">
+    <img src="../imagens/barbearia-tradicao.jpg" width="250" height="250" title="logo barbearia">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+    </ul>
+
+<article>
+    <h1>Sobre a Barbearia Tradição</h1>
+    <p>Localizada no coração da cidade a Barbearia Tradição traz para o mercado o que há de melhor <br> para o seu cabelo e barba. Fundada em 2019, a <ins>Barbearia Tradição</ins> já é destaque na cidade e <br> conquista novos clientes a cada dia.
+        <br><br>
+    Nossa missão é proporcionar é: <b><i>"Auto-estima e qualidade de vida aos clientes"</i></b><br><br>
+    Oferecemos Profissionais experientes e antenados as mudanças no mundo da moda. O <br>
+    Atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.
+
+</p> 
+</article>
+<h1>Benefícios</h1>
+<ul>
+    <li>Atendimento aos clientes</li>
+    <li>Espaço diferenciado</li>
+    <li>Localização</li>
+    <li>Profissionais Qualificados</li>
+</ul>
+<div id="produtos">
+    <h1>Produtos</h1>
+    <ul>
+        <li>Cabelo</li>
+        <img src="../imagens/caabelo.png" width="200" height="200" title="cabelo">
+        <p>Na tesoura ou máquina, como o cliente preferir<br>
+        R$ 25,00</p>
+        <li>Barba</li>
+        <img src="../imagens/barba.png" width="200" height="200" title="barba">
+        <p>Corte e desenho profissional de barba <br>
+        R$18,00</p>
+        <li>Cabelo + Barba</li>
+        <img src="../imagens/cabelo e barba.jpg" width="200" height="200" title="cabelo e barba">
+        <p>Pacote completo de cabelo e barba <br>
+        R$35,00</p>
+    </ul>
+    <a href="#home">Voltar</a>
+    </div>
+</div>
+<br>
+<form id="cadastro" class="box">
+    <div class="inputBox">
+        <label for="nome">Nome</label><br>
+        <input id="nome" name="nome" type="text" size="50">
+    </div>
+    <br>
+    <div class="inputBox">
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" size="50">
+    </div>
+    <br>
+    <div class="inputBox">
+        <label for="telefone">Telefone</label><br>
+        <input id="telefone" name="telefone" type="tel" size="50">
+    </div>
+    <br>
+    <p>Mensagem:</p>
+    <textarea id="mensagem" name="mensagem" cols="50" rows="10"></textarea>
+    <br>
+    <fieldset id="contato" name="contato"><legend>Como prefere o nosso contato ?</legend>
+    
+        <input id="email" name="contato" type="radio" value="Email">Email<br>
+        <br>
+
+        <input id="telefone" name="contato" type="radio" value="Telefone">Telefone <br>
+        <br>
+ 
+        <input id="Whatsapp" name="contato" type="radio" value="Whatsapp">Whatsapp <br>
+    </fieldset>
+    <br>
+    <fieldset><legend>Qual o horário prefere ser atendido ?</legend>
+        <select name="turno" id="turno">
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+        </select>
+    </fieldset>
+    <br>
+    <input type="checkbox" id="novidades" name="novidades"> Gostaria de receber nossas novidades por Email ?
+    <br><br>
+    <input type="submit" value="Enviar Formulário" id="submit" name="submit">
+    <br>
+    <table>
+        <caption>Horário de Funcionamento</caption>
+        <br>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>08h - 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>08h - 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>08h - 20h</td>
+            </tr>
+             </tbody>
+        </thead>
+    </table>
+</form>
+</body>
+</html>
